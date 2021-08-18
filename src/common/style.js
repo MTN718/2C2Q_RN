@@ -1,0 +1,285 @@
+import
+{
+  Dimensions,
+  Platform,
+  StyleSheet
+} from 'react-native';
+
+const primaryBlueColor = '#0d97df';
+const whiteColor = '#fff';
+export default StyleSheet.create({
+    loading: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor:'#000',
+      opacity:0.9,
+      zIndex:999999999999999999,
+      elevation:10
+    },
+    loaderView: {
+      width:(250),
+      height:(60),
+      backgroundColor:'#fff',
+      borderRadius:5,
+      flexDirection:'row',
+      alignItems:'center'
+    },
+    container: {
+      flexGrow: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    activityIndicator: {
+        margin:(15)
+    },
+    loadingText:{
+        fontSize:(14),
+    },
+    primaryFullBG:{
+      flex:1,
+      backgroundColor:whiteColor
+    },
+    vwTopLogo:{
+      height:200,
+      justifyContent:'center',
+      width:'100%',
+      alignItems:'center',
+      backgroundColor:primaryBlueColor,
+      padding:30
+    },
+    vwSearchlistMinimize:{
+      position:"absolute",
+      bottom:0,
+      left:0,
+      right:0,
+      height:120
+    },
+    vwInputContainer:{
+      marginTop:20,
+      width:'100%',
+      paddingLeft:20,
+      paddingRight:20,
+      paddingBottom:50
+    },
+    itemImg:{
+      width:140,
+      height:120
+    },
+    itemIcon:{
+      width:12,
+      height:12
+    },
+    itemStarText:{
+      color:primaryBlueColor,
+      fontSize:15,
+      fontWeight:'200'
+    },
+    itemTimeText:{
+      color:primaryBlueColor,
+      fontSize:15,
+      fontWeight:'600'
+    },
+    itemTitle:{
+      color:'#131313',
+      fontSize:16,
+      fontWeight:'bold'
+    },
+    itemDescription:{
+      color:'#131313',
+      fontSize:14,
+      fontWeight:'400'
+    },
+    imgTopLogo:{
+      width:'100%',
+      height:'100%'
+    },
+    primaryText:{
+      color:"#131313",
+      fontSize:20,
+      fontWeight:'600'
+    },
+    primaryInput:{
+      marginTop:10,
+      borderColor:'#707070',
+      borderWidth:1,
+      borderStyle:'solid',
+      color:'#495057',
+      fontSize:20,
+      fontWeight:'400',
+      paddingLeft:10,
+      paddingRight:10,
+      paddingTop:10,
+      paddingBottom:10
+    },
+    topMarginLarge:{
+      marginTop:20
+    },
+    vwRightAlign:{
+      width:'100%',
+      justifyContent:'flex-end',
+      flexDirection:'row'
+    },
+    primaryLightText:{
+      color:"#b5b5b5",
+      fontSize:16,
+      fontWeight:'400'
+    },
+    primaryBtn:{
+      backgroundColor:primaryBlueColor,
+      paddingTop:15,
+      paddingBottom:15,
+      paddingLeft:30,
+      paddingRight:30,
+      borderRadius:30,
+      height:50,
+      justifyContent:'center',
+      alignContent:'center'
+    },
+
+    primaryEmptyBtn:{
+      flexDirection:'row',
+      borderColor:primaryBlueColor,
+      borderWidth:1,
+      paddingTop:15,
+      paddingBottom:15,
+      paddingLeft:30,
+      paddingRight:30,
+      borderRadius:30,
+      height:50,
+      justifyContent:'center',
+      alignItems:'center',
+      alignContent:'center'
+    },
+    borderColorGray:{
+      borderColor:'#707070'
+    },  
+    colorGray:{
+      color:'#495057'
+    },
+    btnText:{
+      color:'#fff',
+      fontSize:16,
+      fontWeight:'500',
+      textAlign:'center'
+    },
+    btnTextEmpty:{
+      color:primaryBlueColor,
+      fontSize:16,
+      fontWeight:'500',
+      textAlign:'center',
+      flex:1
+    },
+    separator:{
+      height:1,backgroundColor:'#b9b7b7',marginTop:20
+    },
+    tabTextActive:{
+      color:whiteColor,marginTop:8,textAlign:'center',fontSize:14,fontWeight:'600'
+    },
+    tabText:{
+      color:primaryBlueColor,marginTop:8,textAlign:'center',fontSize:14,fontWeight:'600'
+    },
+    tabButton:{
+      flex:1,paddingTop:18,alignItems:'center'
+    },
+    topVw:{
+      flexDirection:'row',height:90,width:'100%',alignItems:'center',backgroundColor:primaryBlueColor
+    },
+    imgTopIcon:{
+      width:25,
+      height:25
+    },
+    topbarTitle:{
+      color:whiteColor,
+      fontSize:25,
+      fontWeight:'bold'
+    },
+    menuVw:{
+      flexDirection:'row',padding:16,alignItems:'center',marginTop:10
+    },
+    menuText:{
+      color:primaryBlueColor,marginLeft:16,fontSize:20,fontWeight:'600'
+    },
+    titleVw: {
+        position:'absolute',
+        left:0,
+        top:0,
+        right:0,
+        bottom:0,
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    centerParent:{
+        justifyContent:'center',
+        alignItems:'center'
+    },
+    lblTitle:{
+        fontSize:35,
+        fontWeight:'bold'
+    },
+    lblInput:{
+        color:'#555',
+        fontSize:14
+    },
+    vwInput:{
+        borderRadius:10,
+        borderColor:'#ccc',
+        padding:10,
+        borderWidth:1
+    },
+    lblLogo:{
+      fontSize:16,
+      fontWeight:'bold'
+    },
+    
+    
+    disableBtn:{
+      backgroundColor:'#64626d',
+      paddingTop:15,
+      paddingBottom:15,
+      borderRadius:30,
+      height:60,
+      justifyContent:'center',
+      alignContent:'center'
+    },
+
+    
+    darkText:{
+      color:'#2F2E35',
+      fontSize:18,
+      textAlign:'center'
+    },
+    whiteText:{
+      fontSize:16,
+      color:'#D9D8D6',
+      fontWeight:'normal'
+    },
+    whiteBold:{
+      fontSize:16,
+      color:'#D9D8D6',
+      fontWeight:'bold'
+    },
+    
+    separatorPrimary:{
+      height:1,backgroundColor:'#FF8136',marginTop:10
+    },
+    separatorBlack:{
+      height:1,backgroundColor:'#2F2E35',marginTop:4,marginBottom:4
+    },
+    btnVw:{
+      width:50,height:30,alignItems:'center',justifyContent:'center'
+    },
+    imgTabIcon:{
+      width:40,
+      height:40
+    },
+
+    imgTabIcon30:{
+      width:30,
+      height:30
+    },
+});
